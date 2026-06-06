@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "first_name": "Marin",
+    "last_name": "Zeplin",
+    "email": "mzeplin0@google.co.uk",
+    "gender": "Female",
+    "ip_address": "169.122.221.246",
+    "city": "Istanbul",
+    "company": {
+      "id": 17,
+      "parentId": 2,
+      "name": "Meijer Logistics"
+    }
+  },
+  {
+    "id": 11,
+    "first_name": "Annadiana",
+    "last_name": "Britland",
+    "email": "abritlanda@bizjournals.com",
+    "gender": "Female",
+    "ip_address": "246.9.215.143",
+    "city": "Istanbul",
+    "company": {
+      "id": 2,
+      "parentId": 0,
+      "name": "Bakker Solutions"
+    }
+  },
+  {
+    "id": 28,
+    "first_name": "Kandy",
+    "last_name": "Konertz",
+    "email": "kkonertzr@weebly.com",
+    "gender": "Female",
+    "ip_address": "249.158.46.244",
+    "city": "Moscow",
+    "company": {
+      "id": 32,
+      "parentId": 17,
+      "name": "de Jong B.V."
+    }
+  }
+]

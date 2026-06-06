@@ -1,0 +1,105 @@
+@use 'vuetify' with (
+  $color-pack: false,
+);
+
+@mixin mix-font-face ($font_name, $font_file) {
+  font-family: $font_name;
+  src: local('O'),
+  url('./fonts/#{$font_file}.woff') format('woff'),
+  url('./fonts/#{$font_file}.woff2') format('woff2'),
+  url('./fonts/#{$font_file}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  @include mix-font-face('Roboto', Roboto-Regular);
+}
+
+@font-face {
+  @include mix-font-face('Roboto Medium', Roboto-Medium);
+}
+
+@font-face {
+  @include mix-font-face('Roboto Semi Bold', Roboto-SemiBold);
+}
+
+$font-size: 12px !default; // основной шрифт приложения
+
+$regular: "Roboto Regular", Arial, Helvetica, sans-serif;
+$semibold: "Roboto Semi Bold", Arial, Helvetica, sans-serif;
+$medium: "Roboto Medium", Arial, Helvetica, sans-serif;
+
+html {
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.controls {
+  display: flex;
+
+  .v-btn {
+    color: var(--grey-d-3);
+  }
+}
+
+.v-list {
+  font-size: var(--text-body-s);
+}
+
+:root {
+  --text: var(--grey-d-5);
+  --white: #fff;
+  --checkbox-s: 16px;
+  --button-s: 32px;
+  --border-radius: 8px;
+}
+
+$shadow-s: 0px 1px 4px 0px hsla(218, 87%, 6%, 0.1);
+
+:root {
+  --shadow-s: #{$shadow-s};
+}
+
+:root {
+  --font-size: #{$font-size}; // 12px
+  --caption-xs: calc(#{$font-size} - 4px); // 8px
+  --caption-s: calc(#{$font-size} - 2px); // 10px
+  --caption: #{#{$font-size}}; // 12px
+  --text-body: #{$font-size}; // 12px
+  --text-body-s: calc(#{$font-size} + 2px); // 14px
+  --text-body-m: calc(#{$font-size} + 4px); // 16px
+  --text-body-l: calc(#{$font-size} + 6px); // 18px
+  --text-body-x: calc(#{$font-size} + 8px); // 20px
+  --heading-6: calc(#{$font-size} + 10px); // 22px
+  --heading-5: calc(#{$font-size} * 2); // 24px
+  --heading-4: calc(#{$font-size} * 2 + 10px); // 34px
+  --heading-3: calc(#{$font-size} * 3 + 2px); // 38px
+  --heading-2: calc(#{$font-size} * 4 - 4px); // 44px
+  --heading-1: calc(#{$font-size} * 4 + 2px); // 50px
+  --regular: #{$regular};
+  --semibold: #{$semibold};
+  --medium: #{$medium};
+}

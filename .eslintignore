@@ -1,0 +1,15 @@
+src/lib
+src/lib/*
+coverage
+**/*.js
+**/*.html
+**/*.json
+**/*.scss
+**/*.css
+**/*.md
+**/*.mdx
+**/*.conf
+**/*.png
+**/*.jpg
+**/*.svg
+**/*.pdf

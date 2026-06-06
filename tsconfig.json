@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "esnext"],
+    "types": ["node", "@types/jest"],
+    "rootDir": "./src",
+    "module": "nodenext",
+    "target": "esnext",
+    "sourceMap": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "preserveConstEnums": true,
+    "noImplicitThis": false,
+    "strictPropertyInitialization": false,
+    "allowJs": false,
+    "strict": false,
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "resolveJsonModule": false,
+  },
+  "include": ["src/**/*", "typings/**/*", "node_modules/@types/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "config"
+  ]
+}
