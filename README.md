@@ -1,2 +1,2 @@
 # datatable
-vue 2 datatable
+vue 3 datatable
